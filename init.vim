@@ -1,3 +1,5 @@
+" Dont forget to check already mapped keys:
+"" :verbose imap <key>
 " enable syntax highlighting
 syntax on
 set background=dark
@@ -99,3 +101,4 @@ function TrimWhitespace()
   keeppatterns %s/\s\+$//e
   call winrestview(l:save)
 endfunction
+
