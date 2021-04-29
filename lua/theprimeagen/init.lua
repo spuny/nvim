@@ -2,7 +2,7 @@ require("theprimeagen.telescope")
 require("theprimeagen.git-worktree")
 -- require("theprimeagen.harpoon")
 -- require("theprimeagen.lsp")
--- require("theprimeagen.statusline")
+require("theprimeagen.statusline")
 
 P = function(v)
   print(vim.inspect(v))
