@@ -8,9 +8,18 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall
 endif
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/.config/nvim_plugged')
 " Autoformating for python code
 " Plug 'ambv/black'
+
+" Plebvim lsp Plugins
+Plug 'neovim/nvim-lspconfig'
+" Plug 'hrsh7th/nvim-compe'
+" Plug 'nvim-lua/completion-nvim'
+Plug 'glepnir/lspsaga.nvim'
+Plug 'simrat39/symbols-outline.nvim'
+" Plug 'tjdevries/nlua.nvim'
+" Plug 'tjdevries/lsp_extensions.nvim'
 
 Plug 'jremmen/vim-ripgrep'
 Plug 'vim-utils/vim-man'
