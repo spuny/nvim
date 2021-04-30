@@ -1,7 +1,7 @@
 # Config
 
 My nvim config that im using daily. I switched from SpaceVim cause there was not
-enough flexibility. So I'm back from VS code to maintaining my vim/nvim config.
+enough flexibility. So I'm back from VScode/SpaceVim to maintaining my vim/nvim config.
 
 ## Plugins
 
