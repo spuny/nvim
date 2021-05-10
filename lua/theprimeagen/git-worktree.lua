@@ -6,9 +6,9 @@ local function is_nrdp()
     return not not (string.find(vim.loop.cwd(), vim.env.NRDP, 1, true))
 end
 
---   local function is_tvui()
---       return not not (string.find(vim.loop.cwd(), vim.env.TVUI, 1, true))
---   end
+   local function is_tvui()
+       return not not (string.find(vim.loop.cwd(), vim.env.TVUI, 1, true))
+   end
 
 local function get_nrdp_build_paths(path)
     return
@@ -18,11 +18,11 @@ end
 
 Worktree.on_tree_change(function(op, path, upstream)
 
---      if op == Worktree.Operations.Switch and is_tvui() then
---          Job:new({
---              "./tvui", "install"
---          }):start()
---      end
+      if op == Worktree.Operations.Switch and is_tvui() then
+          Job:new({
+              "./tvui", "install"
+          }):start()
+      end
 
     if op == Worktree.Operations.Create and is_nrdp() then
         local submodule = Job:new({

@@ -14,13 +14,13 @@ call plug#begin('~/.config/nvim/plugged')
 " Plug 'ambv/black'
 
 " Plebvim lsp Plugins
-Plug 'neovim/nvim-lspconfig'
+" Plug 'neovim/nvim-lspconfig'
 " Plug 'hrsh7th/nvim-compe'
 " Plug 'nvim-lua/completion-nvim'
-Plug 'glepnir/lspsaga.nvim'
+" Plug 'glepnir/lspsaga.nvim'
 Plug 'simrat39/symbols-outline.nvim'
 Plug 'tjdevries/nlua.nvim'
-Plug 'tjdevries/lsp_extensions.nvim'
+" Plug 'tjdevries/lsp_extensions.nvim'
 
 Plug 'jremmen/vim-ripgrep'
 Plug 'vim-utils/vim-man'
@@ -58,6 +58,9 @@ Plug 'gruvbox-community/gruvbox'
 Plug 'hoob3rt/lualine.nvim'
 
 call plug#end()
+
+" Coc config
+" By default it uses TAB to autocomplete
 
 " for coc plugin, path to node command
 let g:coc_node_path = '/Users/jakubspunar/.nvm/versions/node/v15.14.0/bin/node'

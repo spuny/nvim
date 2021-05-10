@@ -1,0 +1,24 @@
+{
+  "languageserver": {
+      "golang": {
+        "command": "gopls",
+        "rootPatterns": ["go.mod"],
+        "filetypes": ["go"]
+      }
+  },
+
+  "yaml.schemas": {
+      "kubernetes": "/*.yaml"
+  },
+  "Lua": {
+    "workspace.library": {
+      "/usr/share/nvim/runtime/lua": true,
+      "/usr/share/nvim/runtime/lua/vim": true,
+      "/usr/share/nvim/runtime/lua/vim/lsp": true
+    },
+    "diagnostics": {
+      "globals": ["vim"]
+    }
+  }
+
+}
