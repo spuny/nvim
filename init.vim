@@ -30,6 +30,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mbbill/undotree'
 Plug 'vim-airline/vim-airline'
 
+" netrw upgrade
+Plug 'tpope/vim-vinegar'
 " git plugins
 Plug 'tpope/vim-fugitive'
 Plug 'ThePrimeagen/git-worktree.nvim'
@@ -75,9 +77,6 @@ endif
 
 " let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let mapleader = " "
-let g:netrw_browse_split = 2
-let g:netrw_banner = 0
-let g:netrw_winsize = 25
 
 " let g:ctrlp_use_caching = 0
 
@@ -86,10 +85,18 @@ nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>u :UndotreeShow<CR>
-nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
+" nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 " nnoremap <leader>rs :Rg<SPACE>
 nnoremap <silent> <leader>+ :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
+
+" netrw settings (EX,SEX,VEX)
+" display style with upped dir
+" let g:netrw_liststyle = 3
+" " remove banner
+" let g:netrw_browse_split = 2
+" let g:netrw_banner = 0
+" let g:netrw_winsize = 25
 
 " YCM
 " the best part
