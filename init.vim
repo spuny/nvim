@@ -2,8 +2,8 @@ set path+=**
 " Dont forget to check already mapped keys:
 "" :verbose imap <key>
 " enable syntax highlighting
-syntax on
-set background=dark
+syntax enable
+
 " autoinstall vim-plug
 if empty(glob('~/.config/nvim/autoload/plug.vim'))                                                                                    
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -59,7 +59,20 @@ Plug 'gruvbox-community/gruvbox'
 " should I try another status bar???
 Plug 'hoob3rt/lualine.nvim'
 
+" BATS - absh automated testing system
+Plug 'aliou/bats.vim'
+" Plug 'towolf/vim-helm'
 call plug#end()
+
+set background=dark
+colorscheme gruvbox
+" gruvbox settings
+
+if !has("gui_running")
+   let g:gruvbox_italic=0
+endif
+
+
 
 " Coc config
 " By default it uses TAB to autocomplete

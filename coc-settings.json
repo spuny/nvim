@@ -1,14 +1,17 @@
 {
+  "sh.enable": true,
+  "sh.globPattern": "**/{.,}*@(.sh|.inc|.bash|.bats|.command)",
+  "python.jediEnabled": false,
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "black",
+  "python.autoComplete.addBrackets": true,
+  "python.workspaceSymbols.ctagsPath": "ctags",
   "languageserver": {
       "golang": {
         "command": "gopls",
         "rootPatterns": ["go.mod"],
         "filetypes": ["go"]
       }
-  },
-
-  "yaml.schemas": {
-      "kubernetes": "/*.yaml"
   },
   "Lua": {
     "workspace.library": {
