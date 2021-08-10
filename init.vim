@@ -93,6 +93,22 @@ let mapleader = " "
 
 " let g:ctrlp_use_caching = 0
 
+" behave vim
+nnoremap Y y$
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+" undo break points
+inoremap , ,<c-g>u
+inoremap . .<c-g>u
+inoremap : :<c-g>u
+inoremap ! !<c-g>u
+inoremap ? ?<c-g>u
+
+" moving text
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
