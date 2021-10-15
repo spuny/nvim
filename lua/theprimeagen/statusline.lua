@@ -75,14 +75,14 @@ local function lsp_info()
     return string.format("LSP: H %d W %d E %d", hints, warnings, errors)
 end
 
-local function harpoon_status()
-    local status = require("harpoon.mark").status()
-    if status == "" then
-        status = "N"
-    end
-
-    return string.format("H:%s", status)
-end
+-- local function harpoon_status()
+--     local status = require("harpoon.mark").status()
+--     if status == "" then
+--         status = "N"
+--     end
+--
+--     return string.format("H:%s", status)
+-- end
 
 Worktree.on_tree_change(function(op)
     if op == Worktree.Operations.Switch then
@@ -97,7 +97,7 @@ function StatusLine()
         constrain_string(get_file_name(), 23, false),
         get_git_info(),
         lsp_info(),
-        harpoon_status(),
+--        harpoon_status(),
         status_line)
 end
 
