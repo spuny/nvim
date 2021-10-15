@@ -82,6 +82,8 @@ let g:coc_node_path = '/Users/jakubspunar/.nvm/versions/node/v15.14.0/bin/node'
 
 lua require("theprimeagen")
 lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
+lua require("telescope").load_extension("git_worktree")
+
 
 
 if executable('rg')
