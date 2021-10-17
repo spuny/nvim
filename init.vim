@@ -22,6 +22,7 @@ Plug 'simrat39/symbols-outline.nvim'
 Plug 'tjdevries/nlua.nvim'
 " Plug 'tjdevries/lsp_extensions.nvim'
 
+Plug 'sharkdp/fd'
 Plug 'jremmen/vim-ripgrep'
 Plug 'vim-utils/vim-man'
 " Plug 'git@github.com:kien/ctrlp.vim.git'
