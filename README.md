@@ -23,6 +23,7 @@ apt-get install ripgrep
 MacOS:
 ```bash
 brew install rg
+brew install fd
 ```
 
 ### Credits

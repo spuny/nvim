@@ -2,9 +2,6 @@ local actions = require('telescope.actions')
 require('telescope').setup {
     defaults = {
       layout_strategy = "horizontal",
-      layout_config = {
-        mirror = true,
-      },
       file_sorter = require('telescope.sorters').get_fzy_sorter,
       prompt_prefix = ' >',
       color_devicons = true,
