@@ -1,7 +1,12 @@
+require("spuny4.compe")
 require("spuny4.telescope")
 require("spuny4.git-worktree")
 require("spuny4.lsp-config")
 require("spuny4.lualine")
+require("spuny4.lsp.bash-ls")
+require("spuny4.lsp.yaml-ls")
+require("spuny4.lsp.lua-ls")
+require("spuny4.lsp.python-ls")
 -- require("theprimeagen.harpoon")
 -- require("spuny4.statusline")
 
