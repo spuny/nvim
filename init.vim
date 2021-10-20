@@ -29,7 +29,8 @@ Plug 'vim-utils/vim-man'
 " Plug 'git@github.com:Valloric/YouCompleteMe.git'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mbbill/undotree'
-Plug 'vim-airline/vim-airline'
+" using lualine
+" Plug 'vim-airline/vim-airline'
 
 " netrw upgrade
 Plug 'tpope/vim-vinegar'
@@ -59,9 +60,15 @@ Plug 'gruvbox-community/gruvbox'
 
 " should I try another status bar???
 Plug 'hoob3rt/lualine.nvim'
+" If you want to have icons in your statusline choose one of these
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'ryanoasis/vim-devicons'
 
 " BATS - absh automated testing system
 Plug 'aliou/bats.vim'
+
+" cheat sheet plugin
+Plug 'dbeniamine/cheat.sh-vim'
 " Plug 'towolf/vim-helm'
 call plug#end()
 

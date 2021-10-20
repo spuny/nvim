@@ -33,7 +33,7 @@ M.search_dotfiles = function()
     require("telescope.builtin").find_files({
         theme = "dropdown",
         path_display = {
-          "tail"
+          "smart"
         },
         prompt_title = "< VimRC >",
         cwd = "$HOME/.config/nvim",
