@@ -14,22 +14,21 @@ call plug#begin('~/.config/nvim/plugged')
 " Plug 'ambv/black'
 
 " Plebvim lsp Plugins
-" Plug 'neovim/nvim-lspconfig'
-" Plug 'hrsh7th/nvim-compe'
-" Plug 'nvim-lua/completion-nvim'
-" Plug 'glepnir/lspsaga.nvim'
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-compe'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'simrat39/symbols-outline.nvim'
-Plug 'tjdevries/nlua.nvim'
-" Plug 'tjdevries/lsp_extensions.nvim'
+Plug 'tjdevries/lsp_extensions.nvim'
 
 Plug 'sharkdp/fd'
 Plug 'jremmen/vim-ripgrep'
 Plug 'vim-utils/vim-man'
 " Plug 'git@github.com:kien/ctrlp.vim.git'
 " Plug 'git@github.com:Valloric/YouCompleteMe.git'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mbbill/undotree'
-" using lualine
+" disabled cause using lualine
 " Plug 'vim-airline/vim-airline'
 
 " netrw upgrade
@@ -41,7 +40,7 @@ Plug 'ThePrimeagen/git-worktree.nvim'
 " Lua plugins
 Plug 'nvim-lua/completion-nvim'
 Plug 'tjdevries/nlua.nvim'
-
+Plug 'sumneko/lua-language-server'
 
 " telescope requirements...
 Plug 'nvim-lua/popup.nvim'
@@ -60,22 +59,22 @@ Plug 'gruvbox-community/gruvbox'
 
 " should I try another status bar???
 Plug 'hoob3rt/lualine.nvim'
-" If you want to have icons in your statusline choose one of these
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'ryanoasis/vim-devicons'
 
 " BATS - absh automated testing system
 Plug 'aliou/bats.vim'
 
 " cheat sheet plugin
 Plug 'dbeniamine/cheat.sh-vim'
+
+" If you want to have icons in your statusline choose one of these
+" Load them as a last ones
+Plug 'kyazdani42/nvim-web-devicons'
 " Plug 'towolf/vim-helm'
 call plug#end()
 
 set background=dark
 colorscheme gruvbox
 " gruvbox settings
-
 if !has("gui_running")
    let g:gruvbox_italic=0
 endif
@@ -86,9 +85,9 @@ endif
 " By default it uses TAB to autocomplete
 
 " for coc plugin, path to node command
-let g:coc_node_path = '/Users/jakubspunar/.nvm/versions/node/v15.14.0/bin/node'
+" let g:coc_node_path = '/Users/jakubspunar/.nvm/versions/node/v15.14.0/bin/node'
 
-lua require("theprimeagen")
+lua require("spuny4")
 lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
 lua require("telescope").load_extension("git_worktree")
 
