@@ -1,4 +1,4 @@
-lua require("theprimeagen")
+lua require("spuny4")
 
 nnoremap <leader>ps :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
 nnoremap <C-p> :lua require('telescope.builtin').git_files()<CR>
