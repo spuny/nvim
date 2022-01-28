@@ -49,6 +49,9 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'colepeters/spacemacs-theme.vim'
 
+" autopairs for parentheses
+Plug 'jiangmiao/auto-pairs'
+
 " Neovim Tree shitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/playground'
@@ -147,11 +150,33 @@ vnoremap <leader>y "*y
 " yank whole file
 nnoremap <leader>Y gg"*yG
 
+"              _                           _     
+"             | |                         | |    
+"   __ _ _   _| |_ ___   ___ _ __ ___   __| |___ 
+"  / _` | | | | __/ _ \ / __| '_ ` _ \ / _` / __|
+" | (_| | |_| | || (_) | (__| | | | | | (_| \__ \
+"  \__,_|\__,_|\__\___/ \___|_| |_| |_|\__,_|___/
+" -----------------------------------------------
+
+augroup SPUNY
+  autocmd!
+  " Workaround for not working of gruvbox_transparent_bg in iterm
+  autocmd SourcePost * highlight Normal     ctermbg=NONE guibg=NONE
+    \ |    highlight LineNr     ctermbg=NONE guibg=NONE
+    \ |    highlight SignColumn ctermbg=NONE guibg=NONE
+augroup END
+
 " useful func
 augroup highlight_yank
     autocmd!
     autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 40})
 augroup END
+
+" Return to last edit position when opening files (You want this!)
+autocmd BufReadPost *
+  \ if line("'\"") > 0 && line("'\"") <= line("$") |
+  \   exe "normal! g`\"" |
+  \ endif
 
 " get rid of pesky blank chars
 function TrimWhitespace()
