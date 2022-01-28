@@ -26,6 +26,7 @@ require'lspconfig'.sumneko_lua.setup {
             },
             diagnostics = {
                 -- Get the language server to recognize the `vim` global
+                -- sources = {'nvim_diagnostics'},
                 globals = {'vim'}
             },
             workspace = {

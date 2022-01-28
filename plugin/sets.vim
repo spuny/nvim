@@ -31,10 +31,11 @@ set updatetime=50
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 
-let &colorcolumn="80,".join(range(120,999),",")
+let &colorcolumn="80,".join(range(120,120),",")
 "set colorcolumn=80
 "highlight ColorColumn ctermbg=darkgrey guibg=darkgrey
 highlight ColorColumn ctermbg=grey guibg=#353130
+" highlight ColorColumn ctermbg=grey guibg=#353130
 
 " highlight line wich cursor is on
 set cursorline

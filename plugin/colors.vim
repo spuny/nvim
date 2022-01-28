@@ -1,4 +1,6 @@
 let g:spuny_colorscheme = 'gruvbox'
+let g:gruvbox_transparent_bg=1
+" let g:gruvbox_selection_bg=
 fun! ColorMyPencils()
 let g:gruvbox_contrast_dark = 'hard'
     if exists('+termguicolors')

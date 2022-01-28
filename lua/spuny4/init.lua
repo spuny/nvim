@@ -1,6 +1,6 @@
 require("spuny4.compe")
 require("spuny4.telescope")
-require("spuny4.git-worktree")
+-- require("spuny4.git-worktree")
 require("spuny4.lsp-config")
 require("spuny4.lualine")
 require("spuny4.lsp.bash-ls")
