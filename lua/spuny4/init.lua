@@ -7,6 +7,7 @@ require("spuny4.lsp.bash-ls")
 require("spuny4.lsp.yaml-ls")
 require("spuny4.lsp.lua-ls")
 require("spuny4.lsp.python-ls")
+require("spuny4.indent-blankline")
 -- require("theprimeagen.harpoon")
 -- require("spuny4.statusline")
 

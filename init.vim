@@ -57,6 +57,9 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/playground'
 
 
+" Indent blank lines (show the line in blanklines for better readability)
+Plug 'lukas-reineke/indent-blankline.nvim'
+
 " add the best colorscheme
 Plug 'gruvbox-community/gruvbox'
 
